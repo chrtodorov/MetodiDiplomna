@@ -137,3 +137,9 @@
 /Users/chrtodorov/RiderProjects/Metodi/Metodi/obj/Debug/net9.0/Metodi.genruntimeconfig.cache
 /Users/chrtodorov/RiderProjects/Metodi/Metodi/obj/Debug/net9.0/ref/Metodi.dll
 /Users/chrtodorov/RiderProjects/Metodi/Metodi/bin/Debug/net9.0/QRCoder.dll
+/Users/chrtodorov/RiderProjects/Metodi/Metodi/obj/Debug/net9.0/Metodi.sourcelink.json
+/Users/chrtodorov/RiderProjects/Metodi/Metodi/bin/Debug/net9.0/PdfSharpCore.dll
+/Users/chrtodorov/RiderProjects/Metodi/Metodi/bin/Debug/net9.0/ICSharpCode.SharpZipLib.dll
+/Users/chrtodorov/RiderProjects/Metodi/Metodi/bin/Debug/net9.0/SixLabors.Fonts.dll
+/Users/chrtodorov/RiderProjects/Metodi/Metodi/bin/Debug/net9.0/SixLabors.ImageSharp.dll
+/Users/chrtodorov/RiderProjects/Metodi/Metodi/bin/Debug/net9.0/de/PdfSharpCore.resources.dll

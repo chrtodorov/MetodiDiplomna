@@ -42,7 +42,7 @@ public class OrdersController : ControllerBase
 
         var subject = "Order Confirmation";
         var body = $"Hello {client.Username}, your order for '{item.Name}' has been placed!";
-        await _emailService.SendEmailAsync(client.Email, subject, body);
+        await _emailService.SendEmailAsync(client.Email, subject, body, order.Id);
 
         return Ok("Order placed & email sent.");
     }
@@ -56,5 +56,24 @@ public class OrdersController : ControllerBase
             .ToListAsync();
 
         return Ok(orders);
+    }
+
+    [HttpGet("myorder/{orderId}")]
+    public async Task<IActionResult> GetOrderByOrderId(int orderId)
+    {
+        var order = await _context.Orders.FirstOrDefaultAsync(x => x.Id == orderId);
+        
+        var item = await _context.Items.FirstOrDefaultAsync(x => x.Id == order.ItemId);
+
+        var response = new SingleItemResponseDto
+        {
+            Name = item.Name,
+            OrderDate = order.OrderDate,
+            Description = item.Description,
+            Quantity = order.Quantity,
+            TotalPrice = order.TotalPrice,
+        };
+        
+        return Ok(response);
     }
 }
